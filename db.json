@@ -1,0 +1,59 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "message": "Changed hard drive on workstatation 01",
+      "attention": false,
+      "date": "03-02-2021",
+      "tech": "Janne Kavander"
+    },
+    {
+      "id": 2,
+      "message": "Workstation is not working 02",
+      "attention": true,
+      "date": "05-02-2021",
+      "tech": "Janne K."
+    },
+    {
+      "id": 3,
+      "message": "iPhone #54 not working correctly",
+      "attention": false,
+      "date": "05-02-2021",
+      "tech": "Janne K."
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "Janne.",
+      "lastName": "Kavander."
+    },
+    {
+      "id": 2,
+      "firstName": "Ville.",
+      "lastName": "Kujala."
+    },
+    {
+      "id": 3,
+      "firstName": "Harri.",
+      "lastName": "Majava."
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "firstName": "test",
+      "lastName": "testing",
+      "id": 8
+    }
+  ]
+}
