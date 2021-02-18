@@ -3,21 +3,21 @@
     {
       "id": 1,
       "message": "Changed hard drive on workstatation 01",
-      "attention": false,
+      "important": false,
       "date": "03-02-2021",
       "tech": "Janne Kavander"
     },
     {
       "id": 2,
       "message": "Workstation is not working 02",
-      "attention": true,
+      "important": true,
       "date": "05-02-2021",
       "tech": "Janne K."
     },
     {
       "id": 3,
       "message": "iPhone #54 not working correctly",
-      "attention": false,
+      "important": false,
       "date": "05-02-2021",
       "tech": "Janne K."
     }
@@ -39,16 +39,9 @@
       "lastName": "Majava."
     },
     {
+      "firstName": "Ville.",
+      "lastName": "Toinen.",
       "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
     },
     {
       "firstName": "test",
