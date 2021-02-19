@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { addLog } from '../../actions/logActions'
+import TechSelectOptions from '../technicians/TechSelectOptions'
 
 import M from 'materialize-css/dist/js/materialize.min.js'
 
@@ -58,9 +59,7 @@ const AddLogModal = ({ addLog }) => {
               onChange={e => setTech(e.target.value)}
             >
               <option value='' disabled>Select Technician</option>
-              <option value='Janne Kavander'>Janne Kavander</option>
-              <option value='Mai Nguyen'>Mai Nguyen</option>
-              <option value='Phuc Lee'>Phuc Lee</option>
+              <TechSelectOptions />
             </select>
           </div>
         </div>
