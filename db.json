@@ -22,13 +22,6 @@
       "id": 3
     },
     {
-      "id": 8,
-      "message": "43434334",
-      "important": false,
-      "tech": "Mai Nguyen",
-      "date": "2021-02-19T11:43:45.556Z"
-    },
-    {
       "id": 9,
       "message": "43f",
       "important": true,
@@ -61,6 +54,21 @@
       "firstName": "test",
       "lastName": "testing",
       "id": 8
+    },
+    {
+      "firstName": "Mai",
+      "lastName": "asd",
+      "id": 9
+    },
+    {
+      "firstName": "New",
+      "lastName": "Technician",
+      "id": 10
+    },
+    {
+      "firstName": "ads",
+      "lastName": "das",
+      "id": 11
     }
   ]
 }
