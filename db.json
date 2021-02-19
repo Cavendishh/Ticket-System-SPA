@@ -44,31 +44,6 @@
       "id": 3,
       "firstName": "Harri.",
       "lastName": "Majava."
-    },
-    {
-      "firstName": "Ville.",
-      "lastName": "Toinen.",
-      "id": 4
-    },
-    {
-      "firstName": "test",
-      "lastName": "testing",
-      "id": 8
-    },
-    {
-      "firstName": "Mai",
-      "lastName": "asd",
-      "id": 9
-    },
-    {
-      "firstName": "New",
-      "lastName": "Technician",
-      "id": 10
-    },
-    {
-      "firstName": "ads",
-      "lastName": "das",
-      "id": 11
     }
   ]
 }

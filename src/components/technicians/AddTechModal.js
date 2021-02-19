@@ -19,7 +19,7 @@ const AddTechModal = ({ addTech }) => {
         lastName
       })
 
-      M.toast({ html: `New tech added as ${firstName} ${lastName}`})
+      M.toast({ html: `New tech added as '${firstName} ${lastName}'`})
     }
   }
   
