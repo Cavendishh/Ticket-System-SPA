@@ -15,11 +15,25 @@
       "tech": "Janne K."
     },
     {
-      "id": 3,
-      "message": "iPhone #54 not working correctly",
+      "message": "dsfaadfsfdsasdfa",
       "important": false,
-      "date": "05-02-2021",
-      "tech": "Janne K."
+      "tech": "Janne Kavander",
+      "date": "2021-02-19T09:34:45.668Z",
+      "id": 3
+    },
+    {
+      "id": 8,
+      "message": "43434334",
+      "important": false,
+      "tech": "Mai Nguyen",
+      "date": "2021-02-19T11:43:45.556Z"
+    },
+    {
+      "id": 9,
+      "message": "43",
+      "important": true,
+      "tech": "Janne Kavander",
+      "date": "2021-02-19T11:44:07.409Z"
     }
   ],
   "techs": [

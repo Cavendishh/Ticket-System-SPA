@@ -1,20 +1,37 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 import M from 'materialize-css/dist/js/materialize.min.js'
+import { updateLog } from '../../actions/logActions'
 
-const EditLogModal = () => {
+const EditLogModal = ({ updateLog, current }) => {
   const [message, setMessage] = useState('')
   const [important, setImportant] = useState(false)
   const [tech, setTech] = useState('')
+
+  useEffect(() => {
+    if (current) {
+      setMessage(current.message)
+      setImportant(current.important)
+      setTech(current.tech)
+    }
+  }, [current])
 
   const onSubmit = () => {
     if (!message && !tech) M.toast({ html: 'Please enter a message and a technician'})
     else if (!message) M.toast({ html: 'Please enter a message' })
     else if (!tech) M.toast({ html: 'Please enter a technician' })
     else {
-      console.log(message, tech, important)
-      setMessage('')
-      setTech('')
-      setImportant(false)
+      const newLog = {
+        id: current.id,
+        message,
+        important,
+        tech,
+        date: new Date()
+      }
+      
+      updateLog(newLog)
+      M.toast({ html: `Ticket ${newLog.id} updated by ${newLog.tech}` })
     }
   }
   
@@ -23,12 +40,15 @@ const EditLogModal = () => {
       <div className='modal-content'>
         <h4>Enter System Log</h4>
         <div className='row'>
-          <div className='input-field'>
+          <div id='test' className='input-field'>
             <input
              type='text'
               name='message'
               value={message}
               onChange={e => setMessage(e.target.value)}
+              // Autofocus is used to prevent input and label overlapping due to materialize
+              // Unfortunately it will throw an error to the console
+              autofocus='true'
             />
             <label htmlFor='message' className='active'>
               Log Message
@@ -80,9 +100,18 @@ const EditLogModal = () => {
   )
 }
 
+EditLogModal.propTypes = {
+  current: PropTypes.object,
+  updateLog: PropTypes.func.isRequired,
+}
+
+const mapStateToProps = state => ({
+  current: state.log.current
+})
+
 const modalStyle = {
   width: '75%',
   height: '75%'
 }
 
-export default EditLogModal
+export default connect(mapStateToProps, { updateLog })(EditLogModal)
