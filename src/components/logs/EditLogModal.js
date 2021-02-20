@@ -39,7 +39,7 @@ const EditLogModal = ({ updateLog, current }) => {
   return (
     <div id='edit-log-modal' className='modal' style={modalStyle}>
       <div className='modal-content'>
-        <h4>Enter System Log</h4>
+        <h4>Edit ticket log</h4>
         <div className='row'>
           <div id='test' className='input-field'>
             <input
@@ -52,7 +52,7 @@ const EditLogModal = ({ updateLog, current }) => {
               autofocus='true'
             />
             <label htmlFor='message' className='active'>
-              Log Message
+              Ticket Message
             </label>
           </div>
         </div>
@@ -69,7 +69,7 @@ const EditLogModal = ({ updateLog, current }) => {
             </select>
           </div>
         </div>
-        <div className='row'>
+        <div className='row '>
           <div className='input-field'>
             <p>
               <label>
@@ -80,7 +80,7 @@ const EditLogModal = ({ updateLog, current }) => {
                   value={important}
                   onChange={e => setImportant(!important)}
                 />
-                <span>Important ticket</span>
+                <span>Mark as an important ticket</span>
               </label>
             </p>
           </div>
@@ -92,7 +92,7 @@ const EditLogModal = ({ updateLog, current }) => {
           onClick={onSubmit} 
           className='modal-close waves-effect waves-green blue btn'
         >
-          Enter
+          Edit
         </a>
       </div>
     </div>

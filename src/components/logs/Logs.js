@@ -18,7 +18,7 @@ const Logs = ({ log: { logs, loading }, getLogs }) => {
   return (
     <ul className='collection with-header'>
       <li className='collection-header'>
-        <h3 className='center'>System logs</h3>
+        <h3 className='center'>Ticket System</h3>
       </li>
       {!loading && logs.length === 0 ?
         (<p className='center'>No logs founds</p>)

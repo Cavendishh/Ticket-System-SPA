@@ -30,7 +30,7 @@ export const getLogs = () => async dispatch => {
   }
 }
 
-// Search logs
+// Search for logs
 export const searchLogs = searchFor => async dispatch => {
   try {
     setLoading()

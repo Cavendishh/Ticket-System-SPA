@@ -2,48 +2,74 @@
   "logs": [
     {
       "id": 1,
-      "message": "Changed hard drive on workstatation 01",
-      "important": false,
-      "date": "03-02-2021",
-      "tech": "Janne Kavander"
-    },
-    {
-      "id": 2,
-      "message": "Workstation is not working 02",
+      "message": "Computer #53 hard drive has been damaged. Needs to be replaced",
       "important": true,
-      "date": "05-02-2021",
-      "tech": "Janne K."
+      "tech": "Janne Kavander",
+      "date": "2021-02-20T21:11:12.455Z"
     },
     {
-      "message": "dsfaadfsfdsasdfa",
-      "important": false,
+      "message": "Cybersecurity threat detected in our databases. Technicians are fixing it currently",
+      "important": true,
       "tech": "Janne Kavander",
-      "date": "2021-02-19T09:34:45.668Z",
+      "date": "2021-02-20T21:05:54.754Z",
+      "id": 2
+    },
+    {
+      "message": "Ipad #7 has some trouble connecting to the cloud",
+      "important": false,
+      "tech": "Rayhan Fraser",
+      "date": "2021-02-20T21:06:27.752Z",
       "id": 3
     },
     {
-      "id": 9,
-      "message": "43f",
+      "id": 4,
+      "message": "Coffee machine broken. Haven't called repair yet",
       "important": true,
+      "tech": "Musab Connor",
+      "date": "2021-02-20T21:07:26.600Z"
+    },
+    {
+      "message": "Graphics driver issue on #12 computer",
+      "important": false,
+      "tech": "Suzanne Steadman",
+      "date": "2021-02-20T21:08:12.488Z",
+      "id": 5
+    },
+    {
+      "message": "Process and put all old log files to new databases",
+      "important": false,
+      "tech": "Rayhan Fraser",
+      "date": "2021-02-20T21:08:59.791Z",
+      "id": 6
+    },
+    {
+      "message": "Computer 06# has a damaged power supply that needs to be replaced soon",
+      "important": false,
       "tech": "Janne Kavander",
-      "date": "2021-02-19T11:59:15.727Z"
+      "date": "2021-02-20T21:10:03.677Z",
+      "id": 7
     }
   ],
   "techs": [
     {
-      "id": 1,
-      "firstName": "Janne.",
-      "lastName": "Kavander."
+      "firstName": "Janne",
+      "lastName": "Kavander",
+      "id": 2
     },
     {
-      "id": 2,
-      "firstName": "Ville.",
-      "lastName": "Kujala."
+      "firstName": "Rayhan",
+      "lastName": "Fraser",
+      "id": 3
     },
     {
-      "id": 3,
-      "firstName": "Harri.",
-      "lastName": "Majava."
+      "firstName": "Suzanne",
+      "lastName": "Steadman",
+      "id": 4
+    },
+    {
+      "firstName": "Musab",
+      "lastName": "Connor",
+      "id": 5
     }
   ]
 }

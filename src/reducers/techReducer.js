@@ -6,7 +6,6 @@ import {
   TECHS_ERROR
   } from '../actions/types'
   
-
 const initialState = {
   techs: null,
   loading: false,

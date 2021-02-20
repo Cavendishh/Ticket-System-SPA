@@ -24,8 +24,7 @@ const AddLogModal = ({ addLog }) => {
       }
 
       addLog(newLog)
-
-      M.toast({ html: `Log added by ${tech}` })
+      M.toast({ html: `Ticket added by ${tech}` })
 
       setMessage('')
       setTech('')
@@ -36,7 +35,7 @@ const AddLogModal = ({ addLog }) => {
   return (
     <div id='add-log-modal' className='modal' style={modalStyle}>
       <div className='modal-content'>
-        <h4>Enter System Log</h4>
+        <h4>Add a new ticket</h4>
         <div className='row'>
           <div className='input-field'>
             <input
@@ -46,7 +45,7 @@ const AddLogModal = ({ addLog }) => {
               onChange={e => setMessage(e.target.value)}
             />
             <label htmlFor='message' className='active'>
-              Log Message
+              Ticket Message
             </label>
           </div>
         </div>
@@ -74,7 +73,7 @@ const AddLogModal = ({ addLog }) => {
                   value={important}
                   onChange={e => setImportant(!important)}
                 />
-                <span>Important ticket</span>
+                <span>Mark as an important ticket</span>
               </label>
             </p>
           </div>
@@ -86,7 +85,7 @@ const AddLogModal = ({ addLog }) => {
           onClick={onSubmit} 
           className='modal-close waves-effect waves-green blue btn'
         >
-          Enter
+          Add
         </a>
       </div>
     </div>
@@ -98,8 +97,8 @@ AddLogModal.propTypes = {
 }
 
 const modalStyle = {
-  width: '75%',
-  height: '75%'
+  width: '65%',
+  height: '65%'
 }
 
 export default connect(null, { addLog })(AddLogModal)

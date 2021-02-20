@@ -1,12 +1,14 @@
 import { createStore, applyMiddleware } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import thunk from 'redux-thunk'
+import ReduxThunk from 'redux-thunk'
 import rootReducer from './reducers'
 
 const initialState = {}
 
-const middleware = [thunk]
+// Redux thunk allows to write async logic that interacts with the store
+const middleware = [ReduxThunk]
 
+// store object will be imported to App.js - it will be pased to Provider component
 const store = createStore(
   rootReducer, 
   initialState, 

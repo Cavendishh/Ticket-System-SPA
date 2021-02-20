@@ -15,8 +15,8 @@ const TechListModal = ({ tech: { techs, loading }, getTechs }) => {
       <div className='modal-content'>
         <h3>Technician list</h3>
         <ul className='collection'>
-          {!loading && techs !== null &&
-            techs.map(t =>
+          {!loading && techs !== null
+            && techs.map(t =>
               <TechItem tech={t} key={t.id} />
             )
           }
