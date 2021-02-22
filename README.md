@@ -14,7 +14,7 @@
   <li>Node.js</li>
   <li>JSON Server</li>
 </ul>
-<li><strong>Functionality:</strong></li>
+<p><strong>Functionality:</strong></p>
 <ul>
   <li>Full CRUD: Add new tickets, search for tickets, update tickets, and delete tickets</li>
   <li>Add new technicians and see who ticket was made by and what time</li>
